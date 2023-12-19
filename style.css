@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    scroll-behavior: smooth;
+  }
+
+header{
+    width: 80%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portal{
+    height: 100vh;
+}
+.discord-family{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#navlinks{
+    overflow: hidden;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 6px 70px;
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover{
+    background-color: #8f4b4b;
+    color: #fff;
+    transition: 0.5s;
+}
+.content {
+    padding: 16px;
+  }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+.lang-switch-plat{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000;
+    display: none;
+}
+.content{
+    text-align: center;
+    line-height: 1.5;
+
+}
+.content h1{
+    font-size: 100px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 60;
+
+}
+.content a:hover{
+    border: 2px solid #fff;
+    background-color: hsl(19, 36%, 53%);
+    transition: 1s;
+}
+.container{
+    background-color: rgb(43, 65, 87);
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+.intro{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 100px;
+
+}
+
+.intro h1{
+    font-size: 100px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    padding-top: 200px;
+
+}
+.intro p{
+    font-size: 30px;
+    line-height: 1.5;
+}
+.intro{
+    width: 80%;
+    height: 100vh;
+
+}
+.intro-col{
+    flex-basis: 31%;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+.portal h1{
+    font-size: 50px;
+    font-weight: 600;
+    padding: 100px 30px;
+    margin: 50px;
+}
+.portal h3{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.row{
+    margin-top: 5%;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 10%;
+
+}
+.portal-col{
+    flex-basis: 31%;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+.discord-family{
+    text-align: center;
+    padding: 100px 0px;
+}
+.discord-family h1{
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+
+@media(max-width: 700px){
+    .nav-links ul li{
+        display: block;
+        padding: 40px;
+    }
+    .content h1{
+        font-size: 70px;
+    }
+    .content a{
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+    .nav-links{
+        position: absolute;
+        height: 100vh;
+        background: #8f9cb4;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .nav-links ul li a{
+        padding: 10px 30px;
+    }
+
+    nav .fa-solid:hover{
+        color: #000;
+    }
+
+    .portal{
+        height: 50vh;
+    }
+    .portal h1{
+        font-size: 30px;
+        padding: 0px 0px;
+    }
+    .portal h3{
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .portal-col{
+        flex-basis: 100%;
+    }
+    .intro{
+        width: 80%;
+        height: 150vh;
+    }
+    .intro h1{
+        font-size: 70px;
+        padding-bottom: 50px;
+        padding-top: 200px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    .intro-col{
+        flex-basis: 100%;
+    }
+    .see{
+        font-size: 30px;
+        padding: 500px 30px;
+    }
+    .us{
+        font-size: 30px;
+        padding: 100px 30px;
+    }
+    .group-link{
+        font-size: 30px;
+        padding:  20px 30px 300px 30px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>糖的</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet'href='style.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="">
+            </div>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">資源</a></li>
+                    <li><a href="#">校網</a></li>
+                    <li><a href="#">文章</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="content" id="slidown">
+            <h1>這裡標題</h1>
+            <a href="#intro">開始旅程</a>
+        </div>   
+    </div>
+</header>
+
+<section class="intro" id="intro">
+    <h1>MathAL</h1>
+    <section class="intro-col">
+    <p>因為暫時要在這邊打一些東西，以後還可以再做更動。<br>
+        建立這個平台的初衷是想要統整網路上琳瑯滿目的自學資源，或者一些學校內分散的課程，在蒐集相關資源的時候可以直接點進來看。也能輔以Discord社群讓學生互動，也就是活起來的計劃！</p>
+    </section>
+</section>
+
+<section class="portal">
+    <h1>猜你想看？</h1>
+    <div class="row">
+        <div class="portal-col">
+            <h3>校內活動</h3>
+            <p>這裡會放一些校內活動的資訊，像是社團活動、學生會活動、系上活動等等。</p>
+        </div>
+        <div class="portal-col">
+            <h3>學習資源</h3>
+            <p>這裡會放一些學習資源，像是課程、線上學習資源、線下學習資源等等。</p>
+        </div>
+        <div class="portal-col">
+            <h3>現正舉辦</h3>
+            <p>這裡會放一些現正舉辦的活動，像是比賽、競賽、研討會等等。</p>
+        </div>
+    </div>
+
+</section>
+<section class="discord-family">
+<h1 class="see">我們的Discord</h1>
+<h1 class="us">你會來的吧？</h1>
+<div class="group-link">
+
+</div>
+</section>
+
+
+<!--JavaScript-->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
