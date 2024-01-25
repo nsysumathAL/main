@@ -7,20 +7,108 @@ html{
     scroll-behavior: smooth;
   }
 
-header{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
-    position: relative;
-    padding: 0 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 body{
-    min-height: 300vh; /* demo scrollbars */
-  }
+    background-color: rgb(43, 65, 87);
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+
+.secc{
+    color: #fff;
+    width: 100%;
+    height: 400vh;
+
+}
+
+.secc h1{
+    font-size: 80px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+.secc h2{
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    padding: 50px 100px;
+}
+
+.secc p{
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: left;
+}
+
+
+.secc li{
+    font-size: 20px;
+    padding: 20px 100px;
+}
+
+.secc ul{
+    list-style: none;
+    padding: 0px 0px;
+
+}
+
+.secc ul p{
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: left;
+}
+
+
+.secc table{
+    width: 88%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+.secc th, .secc td{
+    text-align: center;
+    padding: 16px;
+    border: 1px solid #ddd;
+}
+
+.secc3{
+text-align: left;
+padding: 0px 200px;
+}
+
+.secc3 h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.secc3 p{
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0px 50px;
+    margin: 30px;
+    display: flex;
+}
+
+table.selable{
+        margin: auto;
+}
 
 .portal{
     height: 100vh;
@@ -31,16 +119,40 @@ body{
 }
 nav{
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
+
 /*QuickReset*/ * { margin: 0; box-sizing: border-box; }
+
+
+
+body{
+    min-height: 300vh; /* demo scrollbars */
+  }
+  
+#navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    -webkit-transition: top 0.2s;
+    transition: top 0.2s;
+  }
+  
+  
+
 .nav-links{
     flex: 1;
     text-align: center;
+    
 }
+.nav-links ul{
+    display: inline-block;
+    list-style: none;
+}
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
@@ -276,7 +388,9 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     transition: opacity 0.5s;
     left: -1px;
     border-right: 5px;
+    
 }
+
 
 
 @media(max-width: 700px){
